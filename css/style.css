@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
 
+::selection {
+    background-color: #c2c2c2;
+    color: #100e17;
+}
+
 ::-webkit-scrollbar {
     width: .5em;
     height: .5em
@@ -42,7 +47,7 @@ a:hover {
 }
 
 .floater {
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 10px;
     transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.4) transform;
     z-index: 10;
@@ -112,7 +117,6 @@ body.show-floater .overlay {
     align-items: center;
     background: #17141d;
     box-shadow: -1rem 0 3rem #000;
-    color: #999;
     padding: 20px;
     transition: 0.3s ease all;
     border-bottom: 1px solid #000;

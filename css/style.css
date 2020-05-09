@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+::-webkit-scrollbar {
+    width: .5em;
+    height: .5em
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #ff8a00, #e52e71);
+    border-radius: .5em;
+    box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, .25), inset -2px -2px 2px rgba(0, 0, 0, .25)
+}
+
+::-webkit-scrollbar-track {
+    background: linear-gradient(90deg, #201c29, #201c29 1px, none 0, none)
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #100e17;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.content {
+    background: #17141d;
+    font-size: 19px;
+    line-height: 1.5;
+    border-radius: 5px;
+    width: 75vw;
+    max-width: 720px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.floater {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.4) transform;
+    z-index: 10;
+    box-shadow: -1rem 0 3rem #000;
+}
+
+.floater input[type=text] {
+    padding: 30px 20px;
+    border: none;
+    box-shadow: none;
+    font-size: 14px;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.4) transform;
+    color: #fff;
+}
+
+.floater input[type=text]:hover,
+.floater input[type=text]:focus {
+    background-color: #17141d;
+}
+
+.floater-bottom {
+    padding: 6px 10px 8px;
+    text-align: right;
+    border-top: 1px solid #000;
+}
+
+.floater-bottom button {
+    padding: 4px 8px;
+    font-size: 10px;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.80);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.3s ease opacity;
+    z-index: 5;
+    pointer-events: none;
+}
+
+body.show-floater .floater {
+    transform: scale(1.1);
+}
+
+body.show-floater .floater input[type=text] {
+    padding: 50px 20px;
+    font-size: 20px;
+}
+
+body.show-floater .overlay {
+    opacity: 0.7;
+    pointer-events: all;
+}
+
+.bookmarks-list {
+    position: relative;
+    z-index: 3;
+    margin-bottom: 40px;
+}
+
+.bookmark {
+    display: flex;
+    align-items: center;
+    background: #17141d;
+    box-shadow: -1rem 0 3rem #000;
+    color: #999;
+    padding: 20px;
+    transition: 0.3s ease all;
+    border-bottom: 1px solid #000;
+    font-size: 16px;
+    position: relative;
+    border-radius: 10px;
+    margin-bottom: -8px;
+}
+
+.bookmark:hover .title {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bookmark:first-child {
+    margin-top: 30px;
+}
+
+.bookmark .img {
+    background-color: #ddd;
+    background-image: url('https://www.facebook.com/images/fb_icon_325x325.png');
+    border-radius: 8px;
+    background-size: cover;
+    background-position: top center;
+    width: 140px;
+    height: 90px;
+    margin-right: 20px;
+}
+
+.bookmark .text {
+    width: 80%;
+}
+
+.bookmark .title {
+    font-size: 22px;
+    color: #fff;
+}
+
+.bookmark .description {
+    font-size: 16px;
+    color: #c2c2c2;
+}
+
+.bookmark .im {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: #c2c2c2;
+    font-size: 16px;
+    transition: 0.3s ease color;
+    cursor: pointer;
+}
+
+.bookmark .im:hover {
+    background: linear-gradient(90deg, #ff8a00, #e52e71);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-control {
+    background-color: #17141d;
+    color: #fff;
+}
+
+.btn-primary {
+    background-image: linear-gradient(to top left, #ff8a00, #e52e71);
+    border: none;
+}

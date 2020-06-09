@@ -151,6 +151,7 @@ body.show-floater .overlay {
     width: 80%;
 }
 
+
 .bookmark .title {
     font-size: 22px;
     color: #fff;
@@ -159,6 +160,13 @@ body.show-floater .overlay {
 .bookmark .description {
     font-size: 16px;
     color: #c2c2c2;
+}
+
+@media only screen and (max-width: 560px) {
+    .description {
+        display: none;
+        visibility: hidden;
+    }
 }
 
 .bookmark .im {
@@ -185,4 +193,10 @@ body.show-floater .overlay {
 .btn-primary {
     background-image: linear-gradient(to top left, #ff8a00, #e52e71);
     border: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        width: 82vw;
+    }
 }

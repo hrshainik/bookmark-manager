@@ -82,7 +82,14 @@ function fillBookmarksList(bookmarks = []) {
 }
 
 function removeBookmark(event) {
-  if (!event.target.matches(".im")) return;
+  if (!event.target.matches(".im")) {
+    return;
+  } else {
+    console.log(event.target.parentElement);
+    const link = event.target.parentElement;
+    link.setAttribute("href", "#");
+    link.setAttribute("target", "_self");
+  }
 
   // fine the index
   const index = event.target.parentNode.dataset.id;

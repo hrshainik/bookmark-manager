@@ -73,7 +73,7 @@ function fillBookmarksList(bookmarks = []) {
                 <h2 class="title">${bookmark.title}</h2>
                 <p class="description">${bookmark.description}</p>
             </div>
-            <i class="im im-x-mark-circle-o"></i>
+            <span class="icon">&#10006;</span>
         </a>`;
     })
     .join("");

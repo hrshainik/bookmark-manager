@@ -5,15 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bookmark App</title>
     <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap"
       rel="stylesheet"
-      href="https://cdn.iconmonstr.com/1.3.0/css/iconmonstr-iconic-font.min.css
-    "
+      media="screen"
     />
+    <link rel="stylesheet" href="css/bootstrap.css" media="screen" />
     <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="shortcut icon"
+      href="img/favicon.png"
+      type="image/x-icon"
+      media="screen"
     />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <meta
+      name="description"
+      content="This app is not only powerful but it's also the most beautiful looking bookmark manager you will ever use."
+    />
+    <meta
+      name="keywords"
+      content="Bookmark Manager, bookmarkapp, bookmark app, bookmark website"
+    />
+    <meta name="author" content="Habibur Rahman" />
   </head>
   <body>
     <div class="overlay"></div>
@@ -23,8 +35,7 @@
         <div class="floater-top">
           <input
             type="text"
-            name=""
-            id=""
+            name="text"
             class="form-control"
             placeholder="What's on your mind?"
           />
@@ -37,6 +48,6 @@
       </form>
     </div>
     <div class="bookmarks-list content"></div>
-    <script src="js/app.js"></script>
+    <script src="js/app.js" async></script>
   </body>
 </html>
